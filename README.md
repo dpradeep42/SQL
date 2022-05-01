@@ -21,10 +21,11 @@
     - [Revoke](#Revoke)
 
 - [Dataset](#Dataset)
-  - [Employee_Attrition](#Employee_Attrition)
+  - [Employee Attrition Dataset](#employee-attrition-dataset)
 
-[_Return to the Top_](#Employee_Attrition)
+[_Return to the Top_](#SQL-Structured-Query-Language)
 ### Employee Attrition Dataset
+***One INSERT quuery can insert maximum 250 rows at a time into SQL Table.
 ```SQL
 CREATE TABLE Employee_Attrition (
     [Age] INT,
