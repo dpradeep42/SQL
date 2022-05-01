@@ -150,7 +150,7 @@
 
 ## SQL Server Basics
 ### Section 1. Querying data
-#### Basic SQL Server SELECT statement
+<u>Basic SQL Server SELECT statement</u>
 <p>Database tables are objects that store all the data in a database. In a table, data is logically organized in a row-and-column format which is similar to a spreadsheet.</p>
 
 <p>Each row represents a unique record in a table, and each column represents a field in the record. For example, the  customers table contains customer data such as customer identification number, first name, last name, phone, email, and address information as shown below:<p>
