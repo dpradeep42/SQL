@@ -157,6 +157,16 @@
 
 ![alt text](/images/1.png)
 
+<p>To query data from a table, you use the SELECT statement. The following illustrates the most basic form of the SELECT statement:</p>
+
+```SQL
+SELECT
+    select_list(if selecting few columns) or * (if selecting all the columns)
+FROM
+    schema_name.table_name or table_name;
+```
+
+
 
 ### Section 2. Sorting data
 ### Section 3. Limiting rows
