@@ -155,6 +155,8 @@
 
 <p>Each row represents a unique record in a table, and each column represents a field in the record. For example, the  customers table contains customer data such as customer identification number, first name, last name, phone, email, and address information as shown below:<p>
 
+![alt text](/images/1.png)
+
 
 ### Section 2. Sorting data
 ### Section 3. Limiting rows
