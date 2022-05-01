@@ -2,7 +2,7 @@
 
 - [SQL - Structured Query Language](#SQL)
   - [DDL - Data Definition Language](#DDL)
-    - [Create](#Create)
+    - [CREATE](#CREATE)
     - [Drop](#Drop)
     - [Alter](#Alter)
     - [Truncate](#Truncate)
@@ -19,6 +19,149 @@
   - [DCL - Data Control Language](#DCL)
     - [Grant](#Grant)
     - [Revoke](#Revoke)
+
+- [SQL Server Basics](#SQL-Server-Basics)
+  
+  - [Section 1. Querying data](#Section-1.-Querying-data)
+    - [CREATE](#CREATE)
+
+  - [Section 2. Sorting data](#Section-2.-Sorting-data)
+    - [ORDER BY](#ORDER-BY)
+
+  - [Section 3. Limiting rows](#Section-3.-Limiting-rows)
+    - [OFFSET FETCH](#OFFSET-FETCH)
+    - [SELECT TOP](#SELECT-TOP)
+
+  - [Section 4. Filtering data](#Section-4.-Filtering-data)
+    - [DISTINCT](#DISTINCT)
+    - [WHERE](#WHERE)
+    - [AND](#AND)
+    - [OR](#OR)
+    - [IN](#IN)
+    - [BETWEEN](#BETWEEN)
+    - [LIKE](#LIKE)
+    - [Column & table aliases](#Column-&-table-aliases)
+    
+  - [Section 5. Joining tables](#Section-5.-Joining-tables)
+    - [Joins](#Joins)
+      - [INNER JOIN](#INNER-JOIN)
+      - [LEFT JOIN](#LEFT-JOIN)
+      - [RIGHT JOIN](#RIGHT-JOIN)
+      - [FULL OUTER JOIN](#FULL-OUTER-JOIN)
+      - [CROSS JOIN](#CROSS-JOIN)
+      - [Self join](#Self-join)
+
+
+  - [Section 6. Grouping data](#Section-6.-Grouping-data)
+    - [GROUP BY](#GROUP-BY)
+    - [HAVING](#HAVING)
+    - [GROUPING SETS](#GROUPING-SETS)
+    - [CUBE](#CUBE)
+    - [ROLLUP](#ROLLUP)
+
+  - [Section 7. Subquery](#Section-7.-Subquery)
+    - [Subquery](#Subquery)
+    - [Correlated subquery](#Correlated-subquery)
+    - [EXISTS](#EXISTS)
+    - [ANY](#ANY)
+    - [ALL](#ALL)
+
+  - [Section 8. Set Operators](#Section-8.-Set-Operators)
+    - [UNION](#UNION)
+    - [INTERSECT](#INTERSECT)
+    - [EXCEPT](#EXCEPT)
+
+  - [Section 9. Common Table Expression (CTE)](#Section-9.-Common-Table-Expression-(CTE))
+    - [CTE](#CTE)
+    - [Recursive CTE](#Recursive-CTE)
+  
+  - [Section 10. Pivot](#Section-10.-Pivot)
+    - [PIVOT](#PIVOT)
+
+  - [Section 11. Modifying data](#Section-11.-Modifying-data)
+    - [INSERT](#INSERT)
+    - [INSERT multiple rows](#INSERT-multiple-rows)
+    - [INSERT INTO SELECT](#INSERT-INTO-SELECT)
+    - [UPDATE](#UPDATE)
+    - [UPDATE JOIN](#UPDATE-JOIN)
+    - [DELETE](#DELETE)
+    - [MERGE](#MERGE)
+    - [Transaction](#Transaction)
+    
+  - [Section 12. Data definition](#Section-12.-Data-definition)
+    -[CREATE DATABASE](#CREATE-DATABASE)
+    -[DROP DATABASE](#DROP-DATABASE)
+    -[CREATE SCHEMA](#CREATE-SCHEMA)
+    -[ALTER SCHEMA](#ALTER-SCHEMA)
+    -[DROP SCHEMA](#DROP-SCHEMA)
+    -[CREATE TABLE](#CREATE-TABLE)
+    -[Identity column](#Identity-column)
+    -[Sequence](#Sequence)
+    -[ALTER TABLE ADD column](#ALTER-TABLE-ADD-column)
+    -[ALTER TABLE ALTER COLUMN](#ALTER-TABLE-ALTER-COLUMN)
+    -[ALTER TABLE DROP COLUMN](#ALTER-TABLE-DROP-COLUMN)
+    -[Computed columns](#Computed-columns)
+    -[DROP TABLE](#DROP-TABLE)
+    -[TRUNCATE TABLE](#TRUNCATE-TABLE)
+    -[SELECT INTO](#SELECT-INTO)
+    -[Rename a table](#Rename-a-table)
+    -[Temporary tables](#Temporary-tables)
+    -[Synonym](#Synonym)
+    
+  - [Section 13. SQL Server Data Types](#Section-13.-SQL-Server-Data-Types)
+    - [SQL Server data types](#SQL-Server-data-types)
+      - [BIT](#BIT)
+      - [INT](#INT)
+      - [DECIMAL](#DECIMAL)
+      - [CHAR](#CHAR)
+      - [NCHAR](#NCHAR)
+      - [VARCHAR](#VARCHAR)
+      - [NVARCHAR](#NVARCHAR)
+      - [DATETIME2](#DATETIME2)
+      - [DATE](#DATE)
+      - [TIME](#TIME)
+      - [DATETIMEOFFSET](#DATETIMEOFFSET)
+      - [GUID](#GUID)
+      
+  - [Section 14. Constraints](#Section-14.-Constraints)
+    - [Primary key](#Primary-key)
+    - [Foreign key](#Foreign key)
+    - [NOT NULL constraint](#NOT-NULL-constraint)
+    - [UNIQUE constraint](#UNIQUE-constraint)
+    - [CHECK constraint](#CHECK-constraint)
+
+  - [Section 15. Expressions](#Section-15.-Expressions)
+    - [CASE](#CASE)
+    - [COALESCE](#COALESCE)
+    - [NULLIF](#NULLIF)
+
+  - [Section 16. Useful Tips](#Section-16.-Useful-Tips)
+    - [Find duplicates](#Find-duplicates)
+    - [Delete duplicates](#Delete-duplicates)
+
+
+[_Return to the Top_](#SQL-Structured-Query-Language)
+
+
+## SQL Server Basics
+### Section 1. Querying data
+### Section 2. Sorting data
+### Section 3. Limiting rows
+### Section 4. Filtering data
+### Section 5. Joining tables
+### Section 6. Grouping data
+### Section 7. Subquery
+### Section 8. Set Operators
+### Section 9. Common Table Expression (CTE)
+### Section 10. Pivot
+### Section 11. Modifying data
+### Section 12. Data definition
+### Section 13. SQL Server Data Types
+### Section 14. Constraints
+### Section 15. Expressions
+### Section 16. Useful Tips
+
+
 
 - [Dataset](#Dataset)
   - [Employee Attrition Dataset](#employee-attrition-dataset)
