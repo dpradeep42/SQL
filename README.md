@@ -1,23 +1,6 @@
 # SQL (Structured Query Language)
 
 - [SQL - Structured Query Language](#SQL)
-<table>
-    <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    
-</table>
   - [DDL - Data Definition Language](#DDL)
     - [CREATE](#CREATE)
     - [Drop](#Drop)
