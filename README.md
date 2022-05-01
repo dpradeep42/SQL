@@ -25,7 +25,7 @@
 
 [_Return to the Top_](#SQL-Structured-Query-Language)
 ### Employee Attrition Dataset
-***One INSERT quuery can insert maximum 250 rows at a time into SQL Table.
+***One INSERT query can insert maximum 250 rows at a time into SQL Table.
 ```SQL
 CREATE TABLE Employee_Attrition (
     [Age] INT,
@@ -316,7 +316,7 @@ INSERT INTO Employee_Attrition VALUES
     (37,N'No',N'Travel_Rarely',1017,N'Research & Development',1,2,N'Medical',1,340,3,N'Female',83,2,1,N'Research Scientist',1,N'Married',3920,18697,2,N'Y',N'No',14,3,1,80,1,17,2,2,3,1,0,2),
     (45,N'No',N'Travel_Frequently',1199,N'Research & Development',7,4,N'Life Sciences',1,341,1,N'Male',77,4,2,N'Manufacturing Director',3,N'Married',6434,5118,4,N'Y',N'No',17,3,4,80,1,9,1,3,3,2,0,2);
 INSERT INTO Employee_Attrition VALUES
-	(37,N'Yes',N'Travel_Frequently',504,N'Research & Development',10,3,N'Medical',1,342,1,N'Male',61,3,3,N'Manufacturing Director',3,N'Divorced',10048,22573,6,N'Y',N'No',11,3,2,80,2,17,5,3,1,0,0,0),
+    (37,N'Yes',N'Travel_Frequently',504,N'Research & Development',10,3,N'Medical',1,342,1,N'Male',61,3,3,N'Manufacturing Director',3,N'Divorced',10048,22573,6,N'Y',N'No',11,3,2,80,2,17,5,3,1,0,0,0),
     (39,N'No',N'Travel_Frequently',505,N'Research & Development',2,4,N'Technical Degree',1,343,3,N'Female',64,3,3,N'Healthcare Representative',3,N'Single',10938,6420,0,N'Y',N'No',25,4,4,80,0,20,1,3,19,6,11,8),
     (29,N'No',N'Travel_Rarely',665,N'Research & Development',15,3,N'Life Sciences',1,346,3,N'Male',60,3,1,N'Research Scientist',4,N'Single',2340,22673,1,N'Y',N'No',19,3,1,80,0,6,1,3,6,5,1,5),
     (42,N'No',N'Travel_Rarely',916,N'Research & Development',17,2,N'Life Sciences',1,347,4,N'Female',82,4,2,N'Research Scientist',1,N'Single',6545,23016,3,N'Y',N'Yes',13,3,3,80,0,10,1,3,3,2,0,2),
@@ -567,7 +567,7 @@ INSERT INTO Employee_Attrition VALUES
     (22,N'No',N'Travel_Rarely',604,N'Research & Development',6,1,N'Medical',1,675,1,N'Male',69,3,1,N'Research Scientist',3,N'Married',2773,12145,0,N'Y',N'No',20,4,4,80,0,3,3,3,2,2,2,2),
     (33,N'No',N'Travel_Rarely',1216,N'Sales',8,4,N'Marketing',1,677,3,N'Male',39,3,2,N'Sales Executive',3,N'Divorced',7104,20431,0,N'Y',N'No',12,3,4,80,0,6,3,3,5,0,1,2);
 INSERT INTO Employee_Attrition VALUES
-	(32,N'No',N'Travel_Rarely',646,N'Research & Development',9,4,N'Life Sciences',1,679,1,N'Female',92,3,2,N'Research Scientist',4,N'Married',6322,18089,1,N'Y',N'Yes',12,3,4,80,1,6,2,2,6,4,0,5),
+    (32,N'No',N'Travel_Rarely',646,N'Research & Development',9,4,N'Life Sciences',1,679,1,N'Female',92,3,2,N'Research Scientist',4,N'Married',6322,18089,1,N'Y',N'Yes',12,3,4,80,1,6,2,2,6,4,0,5),
     (30,N'No',N'Travel_Frequently',160,N'Research & Development',3,3,N'Medical',1,680,3,N'Female',71,3,1,N'Research Scientist',3,N'Divorced',2083,22653,1,N'Y',N'No',20,4,3,80,1,1,2,3,1,0,0,0),
     (53,N'No',N'Travel_Rarely',238,N'Sales',1,1,N'Medical',1,682,4,N'Female',34,3,2,N'Sales Executive',1,N'Single',8381,7507,7,N'Y',N'No',20,4,4,80,0,18,2,4,14,7,8,10),
     (34,N'No',N'Travel_Rarely',1397,N'Research & Development',1,5,N'Life Sciences',1,683,2,N'Male',42,3,1,N'Research Scientist',4,N'Married',2691,7660,1,N'Y',N'No',12,3,4,80,1,10,4,2,10,9,8,8),
@@ -818,7 +818,7 @@ INSERT INTO Employee_Attrition VALUES
     (26,N'Yes',N'Non-Travel',265,N'Sales',29,2,N'Medical',1,1037,2,N'Male',79,1,2,N'Sales Executive',1,N'Single',4969,21813,8,N'Y',N'No',18,3,4,80,0,7,6,3,2,2,2,2),
     (52,N'Yes',N'Travel_Rarely',266,N'Sales',2,1,N'Marketing',1,1038,1,N'Female',57,1,5,N'Manager',4,N'Married',19845,25846,1,N'Y',N'No',15,3,4,80,1,33,3,3,32,14,6,9);
 INSERT INTO Employee_Attrition VALUES
-	(44,N'No',N'Travel_Rarely',1448,N'Sales',28,3,N'Medical',1,1039,4,N'Female',53,4,4,N'Sales Executive',4,N'Married',13320,11737,3,N'Y',N'Yes',18,3,3,80,1,23,2,3,12,11,11,11),
+    (44,N'No',N'Travel_Rarely',1448,N'Sales',28,3,N'Medical',1,1039,4,N'Female',53,4,4,N'Sales Executive',4,N'Married',13320,11737,3,N'Y',N'Yes',18,3,3,80,1,23,2,3,12,11,11,11),
     (50,N'No',N'Non-Travel',145,N'Sales',1,3,N'Life Sciences',1,1040,4,N'Female',95,3,2,N'Sales Executive',3,N'Married',6347,24920,0,N'Y',N'No',12,3,1,80,1,19,3,3,18,7,0,13),
     (36,N'Yes',N'Travel_Rarely',885,N'Research & Development',16,4,N'Life Sciences',1,1042,3,N'Female',43,4,1,N'Laboratory Technician',1,N'Single',2743,8269,1,N'Y',N'No',16,3,3,80,0,18,1,3,17,13,15,14),
     (39,N'No',N'Travel_Frequently',945,N'Research & Development',22,3,N'Medical',1,1043,4,N'Female',82,3,3,N'Manufacturing Director',1,N'Single',10880,5083,1,N'Y',N'Yes',13,3,3,80,0,21,2,3,21,6,2,8),
@@ -1069,7 +1069,7 @@ INSERT INTO Employee_Attrition VALUES
     (26,N'No',N'Travel_Rarely',683,N'Research & Development',2,1,N'Medical',1,1407,1,N'Male',36,2,1,N'Research Scientist',4,N'Single',3904,4050,0,N'Y',N'No',12,3,4,80,0,5,2,3,4,3,1,1),
     (42,N'No',N'Travel_Rarely',1147,N'Human Resources',10,3,N'Human Resources',1,1408,3,N'Female',31,3,4,N'Manager',1,N'Married',16799,16616,0,N'Y',N'No',14,3,3,80,1,21,5,3,20,7,0,9);
 INSERT INTO Employee_Attrition VALUES
-	(52,N'No',N'Travel_Rarely',258,N'Research & Development',8,4,N'Other',1,1409,3,N'Female',54,3,1,N'Laboratory Technician',1,N'Married',2950,17363,9,N'Y',N'No',13,3,3,80,0,12,2,1,5,4,0,4),
+    (52,N'No',N'Travel_Rarely',258,N'Research & Development',8,4,N'Other',1,1409,3,N'Female',54,3,1,N'Laboratory Technician',1,N'Married',2950,17363,9,N'Y',N'No',13,3,3,80,0,12,2,1,5,4,0,4),
     (37,N'No',N'Travel_Rarely',1462,N'Research & Development',11,3,N'Medical',1,1411,1,N'Female',94,3,1,N'Laboratory Technician',3,N'Single',3629,19106,4,N'Y',N'No',18,3,1,80,0,8,6,3,3,2,0,2),
     (35,N'No',N'Travel_Frequently',200,N'Research & Development',18,2,N'Life Sciences',1,1412,3,N'Male',60,3,3,N'Manufacturing Director',4,N'Single',9362,19944,2,N'Y',N'No',11,3,3,80,0,10,2,3,2,2,2,2),
     (25,N'No',N'Travel_Rarely',949,N'Research & Development',1,3,N'Technical Degree',1,1415,1,N'Male',81,3,1,N'Laboratory Technician',4,N'Married',3229,4910,4,N'Y',N'No',11,3,2,80,1,7,2,2,3,2,0,2),
@@ -1320,7 +1320,7 @@ INSERT INTO Employee_Attrition VALUES
     (27,N'No',N'Travel_Rarely',1054,N'Research & Development',8,3,N'Medical',1,1751,3,N'Female',67,3,1,N'Research Scientist',4,N'Single',3445,6152,1,N'Y',N'No',11,3,3,80,0,6,5,2,6,2,1,4),
     (29,N'Yes',N'Travel_Rarely',428,N'Sales',9,3,N'Marketing',1,1752,2,N'Female',52,1,1,N'Sales Representative',2,N'Single',2760,14630,1,N'Y',N'No',13,3,3,80,0,2,3,3,2,2,2,2);
 INSERT INTO Employee_Attrition VALUES
-	(29,N'No',N'Travel_Frequently',461,N'Research & Development',1,3,N'Life Sciences',1,1753,4,N'Male',70,4,2,N'Healthcare Representative',3,N'Single',6294,23060,8,N'Y',N'Yes',12,3,4,80,0,10,5,4,3,2,0,2),
+    (29,N'No',N'Travel_Frequently',461,N'Research & Development',1,3,N'Life Sciences',1,1753,4,N'Male',70,4,2,N'Healthcare Representative',3,N'Single',6294,23060,8,N'Y',N'Yes',12,3,4,80,0,10,5,4,3,2,0,2),
     (30,N'No',N'Travel_Rarely',979,N'Sales',15,2,N'Marketing',1,1754,3,N'Male',94,2,3,N'Sales Executive',1,N'Divorced',7140,3088,2,N'Y',N'No',11,3,1,80,1,12,2,3,7,7,1,7),
     (34,N'No',N'Travel_Rarely',181,N'Research & Development',2,4,N'Medical',1,1755,4,N'Male',97,4,1,N'Research Scientist',4,N'Married',2932,5586,0,N'Y',N'Yes',14,3,1,80,3,6,3,3,5,0,1,2),
     (33,N'No',N'Non-Travel',1283,N'Sales',2,3,N'Marketing',1,1756,4,N'Female',62,3,2,N'Sales Executive',2,N'Single',5147,10697,8,N'Y',N'No',15,3,4,80,0,13,2,2,11,7,1,7),
