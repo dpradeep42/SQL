@@ -140,6 +140,11 @@
     - [Delete duplicates](#Delete-duplicates)
 
 
+
+- [Dataset](#Dataset)
+  - [Employee Attrition Dataset](#employee-attrition-dataset)
+
+
 [_Return to the Top_](#SQL-Structured-Query-Language)
 
 
@@ -163,8 +168,6 @@
 
 
 
-- [Dataset](#Dataset)
-  - [Employee Attrition Dataset](#employee-attrition-dataset)
 
 [_Return to the Top_](#SQL-Structured-Query-Language)
 ## Dataset
