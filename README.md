@@ -88,9 +88,14 @@
     - [MERGE](#MERGE)
     - [Transaction](#Transaction)
 
-  - [Section 11. Aggregate Functions](#Section-11.-Aggregate-Functions)
+  - [Section 12. Aggregate Functions](#Section-12.-Aggregate-Functions)
+    - [COUNT](#COUNT)
+    - [SUM](#SUM)
+    - [AVG](#AVG)
+    - [MIN](#MIN)
+    - [MAX](#MAX)
     
-  - [Section 12. Data definition](#Section-12.-Data-definition)
+  - [Section 13. Data definition](#Section-13.-Data-definition)
     - [CREATE DATABASE](#CREATE-DATABASE)
     - [DROP DATABASE](#DROP-DATABASE)
     - [CREATE SCHEMA](#CREATE-SCHEMA)
@@ -110,7 +115,7 @@
     - [Temporary tables](#Temporary-tables)
     - [Synonym](#Synonym)
     
-  - [Section 13. SQL Server Data Types](#Section-13.-SQL-Server-Data-Types)
+  - [Section 14. SQL Server Data Types](#Section-14.-SQL-Server-Data-Types)
     - [SQL Server data types](#SQL-Server-data-types)
       - [BIT](#BIT)
       - [INT](#INT)
@@ -125,19 +130,19 @@
       - [DATETIMEOFFSET](#DATETIMEOFFSET)
       - [GUID](#GUID)
       
-  - [Section 14. Constraints](#Section-14.-Constraints)
+  - [Section 15. Constraints](#Section-15.-Constraints)
     - [Primary key](#Primary-key)
     - [Foreign key](#Foreign-key)
     - [NOT NULL constraint](#NOT-NULL-constraint)
     - [UNIQUE constraint](#UNIQUE-constraint)
     - [CHECK constraint](#CHECK-constraint)
 
-  - [Section 15. Expressions](#Section-15.-Expressions)
+  - [Section 16. Expressions](#Section-16.-Expressions)
     - [CASE](#CASE)
     - [COALESCE](#COALESCE)
     - [NULLIF](#NULLIF)
 
-  - [Section 16. Useful Tips](#Section-16.-Useful-Tips)
+  - [Section 17. Useful Tips](#Section-17.-Useful-Tips)
     - [Find duplicates](#Find-duplicates)
     - [Delete duplicates](#Delete-duplicates)
 
