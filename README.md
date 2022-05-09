@@ -87,6 +87,8 @@
     - [DELETE](#DELETE)
     - [MERGE](#MERGE)
     - [Transaction](#Transaction)
+
+  - [Section 11. Aggregate Functions](#Section-11.-Aggregate-Functions)
     
   - [Section 12. Data definition](#Section-12.-Data-definition)
     - [CREATE DATABASE](#CREATE-DATABASE)
