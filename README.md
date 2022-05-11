@@ -180,6 +180,7 @@ FROM
 ### Section 4. Filtering data
 ### Section 5. Joining tables
 ### Section 6. Grouping data
+#### GROUP BY 
 <u>GROUP BY</u>
 - [GROUP BY Dataset](#GROUP-BY-Dataset)
 <p>The GROUP BY statement groups records into summary rows and returns one record for each group</p>
