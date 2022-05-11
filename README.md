@@ -180,16 +180,34 @@ FROM
 ### Section 4. Filtering data
 ### Section 5. Joining tables
 ### Section 6. Grouping data
+<u>GROUP BY</u>
+- [GROUP BY Dataset](#GROUP-BY-Dataset)
+<p>The GROUP BY statement groups records into summary rows and returns one record for each group</p>
+
+  - GROUP BY Clause is a part of SELECT Expression.
+  - In each Group no two rows have the same value for the Grouping column(s).
+  - GROUP BY can be  used to join two or more tables together.
+
+Syantax:
+```SQL
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+ORDER BY column_name(s);
+```
+
 ### Section 7. Subquery
 ### Section 8. Set Operators
 ### Section 9. Common Table Expression (CTE)
 ### Section 10. Pivot
 ### Section 11. Modifying data
-### Section 12. Data definition
-### Section 13. SQL Server Data Types
-### Section 14. Constraints
-### Section 15. Expressions
-### Section 16. Useful Tips
+### Section 12. Aggregate Functions
+### Section 13. Data definition
+### Section 14. SQL Server Data Types
+### Section 15. Constraints
+### Section 16. Expressions
+### Section 17. Useful Tips
 
 
 
@@ -1712,4 +1730,116 @@ INSERT INTO Employee_Attrition VALUES
     (27,N'No',N'Travel_Rarely',155,N'Research & Development',4,3,N'Life Sciences',1,2064,2,N'Male',87,4,2,N'Manufacturing Director',2,N'Married',6142,5174,1,N'Y',N'Yes',20,4,2,80,1,6,0,3,6,2,0,3),
     (49,N'No',N'Travel_Frequently',1023,N'Sales',2,3,N'Medical',1,2065,4,N'Male',63,2,2,N'Sales Executive',2,N'Married',5390,13243,2,N'Y',N'No',14,3,4,80,0,17,3,2,9,6,0,8),
     (34,N'No',N'Travel_Rarely',628,N'Research & Development',8,3,N'Medical',1,2068,2,N'Male',82,4,2,N'Laboratory Technician',3,N'Married',4404,10228,2,N'Y',N'No',12,3,1,80,0,6,3,4,4,3,1,2);
+```
+
+[_Return to the Top_](#SQL-Structured-Query-Language)
+### GROUP BY Dataset
+```SQL
+IF NOT EXISTS (
+    select * from sysobjects where name='EmployeeGH' and xtype='U'
+) CREATE TABLE EmployeeGH (
+    [Emp_Id] INT,
+    [Emp_Name] NVARCHAR(45),
+    [Age] INT,
+    [Gender] NVARCHAR(1),
+    [Doj] DATETIME,
+    [Dept] NVARCHAR(9),
+    [City] NVARCHAR(8),
+    [Salary] NUMERIC(16, 10)
+);
+INSERT INTO EmployeeGH VALUES
+    (101,N'Clarke Griffin',35,N'F','2005-05-30 00:00:00',N'Sales',N'Chicago',70000),
+    (102,N'Abigail "Abby" Griffin',30,N'F','1999-06-25 00:00:00',N'Marketing',N'Seattle',55000),
+    (103,N'Finn Collins',28,N'M','2009-03-10 00:00:00',N'Product',N'Boston',62000),
+    (104,N'Wells Jaha',37,N'M','2011-07-12 00:00:00',N'Tech',N'Austin',57000),
+    (105,N'Octavia Blake',32,N'F','2017-10-27 00:00:00',N'Sales',N'New York',72000),
+    (106,N'Bellamy Blake',35,N'M','2014-12-20 00:00:00',N'IT',N'Seattle',80000),
+    (107,N'Callie "Cece" Cartwig',40,N'F','2012-07-14 00:00:00',N'Finance',N'Houston',100000),
+    (108,N'Monty Green',36,N'M','2007-02-04 00:00:00',N'Tech',N'New York',110000),
+    (109,N'Jasper Jordan',25,N'M','2010-07-18 00:00:00',N'HR',N'Boston',90000),
+    (110,N'Thelonious Jaha',34,N'M','2009-08-25 00:00:00',N'Product',N'Miami',75000),
+    (111,N'Marcus Kane I',28,N'M','2011-02-27 00:00:00',N'Tech',N'Chicago',60000),
+    (112,N'Raven Reyes',33,N'F','2013-09-21 00:00:00',N'HR',N'Houston',65000),
+    (113,N'Lincoln',30,N'M','2018-10-15 00:00:00',N'Finance',N'Austin',55000),
+    (114,N'John Murphy',40,N'M','2015-12-18 00:00:00',N'Sales',N'Detroit',95000),
+    (115,N'Roan',36,N'F','2016-04-20 00:00:00',N'IT',N'Chicago',83000),
+    (116,N'Echo/Ash',32,N'F','2004-08-09 00:00:00',N'Marketing',N'Miami',67000),
+    (117,N'Jordan Green',29,N'M','2002-06-11 00:00:00',N'Tech',N'Detroit',72000),
+    (118,N'Russell Lightbourne VII / Malachi / Sheidheda',25,N'F','2018-10-15 00:00:00',N'IT',N'Houston',48000),
+    (119,N'Gabriel Santiago',37,N'M','2019-05-28 00:00:00',N'Product',N'Seattle',76000),
+    (120,N'Hope Diyoza',45,N'F','2016-11-23 00:00:00',N'Sales',N'Chicago',115000),
+    (121,N'Raven Reyes II',35,N'F','2005-05-30 00:00:00',N'Sales',N'Chicago',81421.052631579),
+    (122,N'Eric Jackson',30,N'M','1999-06-25 00:00:00',N'Marketing',N'Seattle',81999.2481203008),
+    (123,N'Nathan Miller',28,N'M','2009-03-10 00:00:00',N'Product',N'Boston',82577.4436090225),
+    (124,N'Harper McIntyre',37,N'M','2011-07-12 00:00:00',N'Tech',N'Austin',83155.6390977444),
+    (125,N'Costa',32,N'F','2017-10-27 00:00:00',N'Sales',N'New York',83733.8345864662),
+    (126,N'Jacapo Sinclair',35,N'F','2014-12-20 00:00:00',N'IT',N'Seattle',84312.030075188),
+    (127,N'Zoe Monroe',40,N'F','2012-07-14 00:00:00',N'Finance',N'Houston',84890.2255639098),
+    (128,N'Fox',36,N'M','2007-02-04 00:00:00',N'Tech',N'New York',85468.4210526316),
+    (129,N'Anya',25,N'F','2010-07-18 00:00:00',N'HR',N'Boston',86046.6165413534),
+    (130,N'Sterling',34,N'F','2009-08-25 00:00:00',N'Product',N'Miami',86624.8120300751),
+    (131,N'John Mbege',28,N'F','2011-02-27 00:00:00',N'Tech',N'Chicago',87203.0075187969),
+    (132,N'Jones',33,N'M','2013-09-21 00:00:00',N'HR',N'Houston',87781.2030075188),
+    (133,N'Jake Griffin',30,N'F','2018-10-15 00:00:00',N'Finance',N'Austin',88359.3984962406),
+    (134,N'Connor',40,N'M','2015-12-18 00:00:00',N'Sales',N'Detroit',88937.5939849625),
+    (135,N'Vera Kane',36,N'F','2016-04-20 00:00:00',N'IT',N'Chicago',89515.7894736843),
+    (136,N'Diana Sydney',32,N'F','2004-08-09 00:00:00',N'Marketing',N'Miami',90093.9849624061),
+    (137,N'Shumway',29,N'F','2002-06-11 00:00:00',N'Tech',N'Detroit',90672.1804511278),
+    (138,N'Kyle Wick',25,N'F','2018-10-15 00:00:00',N'IT',N'Houston',91250.3759398496),
+    (139,N'Bree',37,N'F','2019-05-28 00:00:00',N'Product',N'Seattle',91828.5714285714),
+    (140,N'Indra',45,N'F','2016-11-23 00:00:00',N'Sales',N'Chicago',92406.7669172933),
+    (141,N'Lexa',35,N'F','2005-05-30 00:00:00',N'Sales',N'Chicago',92984.9624060151),
+    (142,N'Carl Emerson',30,N'F','1999-06-25 00:00:00',N'Marketing',N'Seattle',93563.1578947369),
+    (143,N'David Miller',28,N'M','2009-03-10 00:00:00',N'Product',N'Boston',94141.3533834587),
+    (144,N'Nyko',37,N'M','2011-07-12 00:00:00',N'Tech',N'Austin',94719.5488721805),
+    (145,N'Maya Vie',32,N'F','2017-10-27 00:00:00',N'Sales',N'New York',95297.7443609023),
+    (146,N'Penn',35,N'F','2014-12-20 00:00:00',N'IT',N'Seattle',95875.9398496241),
+    (147,N'Byrne',40,N'F','2012-07-14 00:00:00',N'Finance',N'Houston',96454.1353383459),
+    (148,N'Cage Wallace',36,N'F','2007-02-04 00:00:00',N'Tech',N'New York',97032.3308270676),
+    (149,N'Dante Wallace',25,N'F','2010-07-18 00:00:00',N'HR',N'Boston',97610.5263157895),
+    (150,N'Gustus',34,N'M','2009-08-25 00:00:00',N'Product',N'Miami',98188.7218045113),
+    (151,N'Lee',28,N'M','2011-02-27 00:00:00',N'Tech',N'Chicago',98766.9172932331),
+    (152,N'Lorelei Tsing',33,N'M','2013-09-21 00:00:00',N'HR',N'Houston',99345.1127819549),
+    (153,N'Vincent Vie',30,N'F','2018-10-15 00:00:00',N'Finance',N'Austin',99923.3082706767),
+    (154,N'Emori',40,N'F','2015-12-18 00:00:00',N'Sales',N'Detroit',100501.503759398),
+    (155,N'A.L.I.E. / Becca',36,N'M','2016-04-20 00:00:00',N'IT',N'Chicago',101079.69924812),
+    (156,N'Niylah',32,N'F','2004-08-09 00:00:00',N'Marketing',N'Miami',101657.894736842),
+    (157,N'Bryan',29,N'F','2002-06-11 00:00:00',N'Tech',N'Detroit',102236.090225564),
+    (158,N'Charles Pike',25,N'F','2018-10-15 00:00:00',N'IT',N'Houston',102814.285714286),
+    (159,N'Aden',37,N'F','2019-05-28 00:00:00',N'Product',N'Seattle',103392.481203008),
+    (160,N'Hannah Green',45,N'F','2016-11-23 00:00:00',N'Sales',N'Chicago',103970.676691729),
+    (161,N'Ontari',35,N'F','2005-05-30 00:00:00',N'Sales',N'Chicago',104548.872180451),
+    (162,N'Titus',30,N'F','1999-06-25 00:00:00',N'Marketing',N'Seattle',105127.067669173),
+    (163,N'Luna',28,N'F','2009-03-10 00:00:00',N'Product',N'Boston',105705.263157895),
+    (164,N'Gaia',37,N'F','2011-07-12 00:00:00',N'Tech',N'Austin',106283.458646617),
+    (165,N'Ilian',32,N'F','2017-10-27 00:00:00',N'Sales',N'New York',106861.654135338),
+    (166,N'Riley',35,N'F','2014-12-20 00:00:00',N'IT',N'Seattle',107439.84962406),
+    (167,N'Bill Cadogan',40,N'F','2012-07-14 00:00:00',N'Finance',N'Houston',108018.045112782),
+    (168,N'Madi Griffin',36,N'F','2007-02-04 00:00:00',N'Tech',N'New York',108596.240601504),
+    (169,N'Charmaine Diyoza',25,N'F','2010-07-18 00:00:00',N'HR',N'Boston',109174.436090226),
+    (170,N'Miles Shaw',34,N'F','2009-08-25 00:00:00',N'Product',N'Miami',109752.631578947),
+    (171,N'Ethan Hardy',28,N'F','2011-02-27 00:00:00',N'Tech',N'Chicago',110330.827067669),
+    (172,N'Paxton McCreary',33,N'F','2013-09-21 00:00:00',N'HR',N'Houston',110909.022556391),
+    (173,N'Kara Cooper',30,N'F','2018-10-15 00:00:00',N'Finance',N'Austin',111487.218045113),
+    (174,N'Brell',40,N'F','2015-12-18 00:00:00',N'Sales',N'Detroit',112065.413533835),
+    (175,N'Michael Vinson',36,N'F','2016-04-20 00:00:00',N'IT',N'Chicago',112643.609022556),
+    (176,N'Blythe Ann Workman',32,N'F','2004-08-09 00:00:00',N'Marketing',N'Miami',113221.804511278),
+    (177,N'Jae Workman',29,N'F','2002-06-11 00:00:00',N'Tech',N'Detroit',113800),
+    (178,N'Nelson',25,N'M','2018-10-15 00:00:00',N'IT',N'Houston',114378.195488722),
+    (179,N'Josephine Lightbourne I',37,N'F','2019-05-28 00:00:00',N'Product',N'Seattle',114956.390977444),
+    (180,N'Malachi',45,N'F','2016-11-23 00:00:00',N'Sales',N'Chicago',115534.586466165),
+    (181,N'James Crockett',35,N'F','2005-05-30 00:00:00',N'Sales',N'Chicago',116112.781954887),
+    (182,N'Kaylee Lee VII',30,N'F','1999-06-25 00:00:00',N'Marketing',N'Seattle',116690.977443609),
+    (183,N'Rose',28,N'F','2009-03-10 00:00:00',N'Product',N'Boston',117269.172932331),
+    (184,N'Simone Lightbourne VI',37,N'F','2011-07-12 00:00:00',N'Tech',N'Austin',117847.368421053),
+    (185,N'Miranda Prime VIII',32,N'F','2017-10-27 00:00:00',N'Sales',N'New York',118425.563909774),
+    (186,N'Jade',35,N'F','2014-12-20 00:00:00',N'IT',N'Seattle',119003.759398496),
+    (187,N'Ryker Desai IX',40,N'F','2012-07-14 00:00:00',N'Finance',N'Houston',119581.954887218),
+    (188,N'Delilah Workman / Priya Desai VI',36,N'F','2007-02-04 00:00:00',N'Tech',N'New York',120160.15037594),
+    (189,N'Trey',25,N'F','2010-07-18 00:00:00',N'HR',N'Boston',120738.345864662),
+    (190,N'Nikki',34,N'F','2009-08-25 00:00:00',N'Product',N'Miami',121316.541353383),
+    (191,N'Levitt',28,N'F','2011-02-27 00:00:00',N'Tech',N'Chicago',121894.736842105),
+    (192,N'Anders',33,N'F','2013-09-21 00:00:00',N'HR',N'Houston',122472.932330827),
+    (193,N'Doucette',30,N'F','2018-10-15 00:00:00',N'Finance',N'Austin',123051.127819549);
+
 ```
